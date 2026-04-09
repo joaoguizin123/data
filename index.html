@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DATA DO CAOS: MATH EDITION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="maquina-container neon-border">
+        <h1>DATA DE NASCIMENTO</h1>
+        
+        <div class="controle-clique">
+            <div class="display-main">
+          
+                <span id="res-dia">01</span>/<span id="res-mes">01</span>/<span id="res-ano">1500</span>
+  
+            </div>
+            <div class="botoes-ajuste">
+                <button onclick="incrementar('dia')">DIA +1</button>
+                <button onclick="incrementar('mes')">MÊS +1</button>
+                <button onclick="incrementar('ano')">ANO +1</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="secao-hacker">
+            <p>OU DESBLOQUEIE O TECLADO:</p>
+            <div id="area-pergunta">
+                <span id="pergunta-texto">Quanto é 5 x 5?</span>
+                <input type="number" id="resposta-math" placeholder="?">
+                <button onclick="verificarDesafio()">HACKEAR</button>
+            </div>
+            <input type="text" id="input-data-livre" placeholder="DD/MM/AAAA" disabled>
+        </div>
+
+        <div id="feedback-caos" class="feedback">Boa sorte, você vai precisar...</div>
+        <button id="btn-salvar-caos" class="btn-premio">SALVAR DADOS</button>
+    </div>
+
+    <script src="db.js"></script> 
+    <script src="controller.js"></script>
+</body>
+</html>
